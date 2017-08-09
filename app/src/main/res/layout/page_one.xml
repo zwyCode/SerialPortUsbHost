@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="149dp"
+        android:background="@drawable/button_style"
+        android:text="@string/button_ok" />
+
+    <Button
+        android:id="@+id/button_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_ok"
+        android:layout_alignLeft="@+id/button_ok"
+        android:layout_alignStart="@+id/button_ok"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button_style"
+        android:text="@string/button_up" />
+
+    <Button
+        android:id="@+id/button_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_up"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="26dp"
+        android:layout_toLeftOf="@+id/button_ok"
+        android:layout_toStartOf="@+id/button_ok"
+        android:background="@drawable/button_style"
+        android:text="@string/button_left" />
+
+    <Button
+        android:id="@+id/button_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_ok"
+        android:layout_alignBottom="@+id/button_ok"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/button_ok"
+        android:layout_toRightOf="@+id/button_ok"
+        android:background="@drawable/button_style"
+        android:text="@string/button_right" />
+
+    <Button
+        android:id="@+id/button_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_right"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/button_left"
+        android:layout_toRightOf="@+id/button_left"
+        android:background="@drawable/button_style"
+        android:text="@string/button_down" />
+
+    <TextView
+        android:id="@+id/pressed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="31dp"
+        android:textSize="25sp"
+        android:text="@string/pressed_title" />
+
+    <TextView
+        android:id="@+id/presss_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pressed_title"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/pressed_title"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/pressed_title" />
+
+    <TextView
+        android:id="@+id/thread_tit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pressed_title"
+        android:layout_alignStart="@+id/pressed_title"
+        android:layout_below="@+id/pressed_title"
+        android:layout_marginTop="28dp"
+        android:textSize="25sp"
+        android:text="@string/thread_title"
+        android:layout_toLeftOf="@+id/presss_value"
+        android:layout_toStartOf="@+id/presss_value" />
+
+    <EditText
+        android:id="@+id/thread_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thread_tit"
+        android:layout_alignLeft="@+id/presss_value"
+        android:layout_alignStart="@+id/presss_value"
+        android:ems="10"
+        android:inputType="number" />
+</RelativeLayout>

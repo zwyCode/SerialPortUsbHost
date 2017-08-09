@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SerialPort</string>
+
+    <string name="button_up">up</string>
+    <string name="button_down">down</string>
+    <string name="button_left">left</string>
+    <string name="button_right">right</string>
+    <string name="button_ok">ok</string>
+    <string name="pressed_title">压力值  :   </string>
+    <string name="thread_title">阈  值  :   </string>
+</resources>
